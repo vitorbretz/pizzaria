@@ -1,0 +1,70 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    text-decoration: none;
+}
+
+:root{
+  --corPaleta01: #fff;
+  --corPaleta02: #ff7c32;
+  --corPaleta03: #ebb6a7d0;
+  --corPaleta04: #2c2b2b;
+  --fonteTitle: "Bebas Neue", serif;
+  --fontParagraph: "Roboto", serif;
+  --fontFooter: "Lobster", serif;
+  --borderRadios: 6px;
+
+}
+
+header{
+    width: 85vw;
+    display: flex;
+    margin:   auto;
+    background-color: var(--corPaleta02);
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    font-family: var(--fontParagraph);
+    border-radius: var(--borderRadios);
+}
+.menu ul{
+    display: flex;
+    gap: 40px;
+}
+.menu ul li {
+    list-style: none;
+    font-size: 1rem;
+
+
+}
+.menu ul li:hover{
+    text-decoration: underline;
+    text-decoration-color: var(--corPaleta01);
+    text-underline-offset: 7px;
+  
+    
+    
+    
+}
+.logo{
+    font-family: var(--fonteTitle);
+    font-size: 35px;
+    margin-left: 10px;
+}
+.buttonHeader{
+    width: 150px;
+    height: 50px;
+    border-radius: var(--borderRadios);
+    background-color: var(--corPaleta02);
+    border-color: var(--corPaleta01);
+    border: 3px solid #fff;
+    color: var(--corPaleta01);
+    margin-right: 10px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+.buttonHeader:hover{
+    border-color: var(--corPaleta04);
+    color: var(--corPaleta04);
+}

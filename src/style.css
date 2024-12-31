@@ -7,7 +7,7 @@
 :root {
     --corPaleta01: #fff;
     --corPaleta02: #ff7c32;
-    --corPaleta03: #ebb6a7d0;
+    --corPaleta03: #f5986333;
     --corPaleta04: #2c2b2b;
     --fonteTitle: "Bebas Neue", serif;
     --fontParagraph: "Roboto", serif;
@@ -81,7 +81,7 @@ header {
 
 main {
     padding-top: 20px;
-    background-image: url(img/ai-generated-8673811_1920.png);
+    background-image: url(img/pizza-fundo.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
     height: 110vh;
@@ -105,7 +105,6 @@ main {
     justify-content: center;
     height: 80%;
 
-
 }
 
 .title {
@@ -126,7 +125,9 @@ main p {
 
 
 }
-
+.ask{
+    width: 400px;
+}
 .askbutton {
     margin: 10px;
     width: 150px;
@@ -159,7 +160,10 @@ main p {
 
 }
 
+
 .recorte {
+    margin: 0;
+    padding: 0;
     height: 400px;
     width: 100vw;
 }
@@ -170,20 +174,301 @@ main p {
     background-size: 100% 100%  ;
     height: 100%;
     position: relative;
-    top: -100px;
+    top: -70px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
 
 }
-.optionApp h2 {
+.sub-title {
     padding-top: 50px;
     font-size: 2.5rem;
     color: var(--corPaleta01);
     text-transform: uppercase;
     font-family: var(--fonteTitle);
 }
-.apps{
-    padding-top: 50px;
+.carousel{
+    padding: 50px 0px;
+    margin: 0 auto;
+    width: 55vw;
+    overflow: hidden;
+    display: flex;
+    > * {
+        flex: 0 0 100%;
+      }
+      &:hover .groups_apps {
+        animation-play-state: paused;
+      }
+      
+}
+.cards{
+    width: 100%;
+    color: var(--corPaleta01);
+    border-radius: var(--borderRadios);
+    box-shadow: rgba(0, 0, 0, 30%) 5px 5px 20px 0 ;
+    padding: 30px;
+    justify-content: center;
+    align-items: center;
+    min-height: 100px;
+    
+    &:nth-child(1) {
+        background: var(--corPaleta01);
+        background-image: url(logo/ifood-logo.png) ;
+        background-size: 100% 90%;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+  
+      &:nth-child(2) {
+        background: var(--corPaleta01);
+        background-image: url(logo/logo-rappi-256.png) ;
+        background-size: 100% 90%;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+  
+      &:nth-child(3) {
+        background: var(--corPaleta01);
+        background-image: url(logo/Uber-Eats-Logo.png) ;
+        background-size: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+      &:nth-child(4) {
+        background: var(--corPaleta01);
+        background-image: url(logo/99-food-logo.png) ;
+        background-size: 100% 40%;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+     
+      
+}
+.groups_apps{
+    display: flex;
+    gap: 20px;
+    padding-right: 20px;
+    will-change: transfomr;
+    animation: scrolling 12s linear infinite;
+}
+
+@keyframes scrolling {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  .fundoWhite{
+        color: var(--corPaleta04);
+        text-align: center;
+        font-family: var(--fontFooter);
+        font-size: 3rem;
+  }
+  .option-menu{
+    height: 80vh;
+   
+    width: 100vw;
+  }
+  .paragraph-menu{
+    text-align: center;
+
+    font-family: var(--fontParagraph);
+    font-size: 1.1rem;
+    width: 600px;
+    margin: 20px auto;
+  }
+  .cardapio{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    max-width: 1000px;
+    position: relative;
+    margin: 30px auto;
+    gap: 30px;
+  }
+.option-cardapio{
+    font-family: var(--fontParagraph);
+    width: 100%;
+    border: 1px solid;
+    border-color:  var(--corPaleta02);
+    background-color: var(--corPaleta03);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    text-align: center;
+    box-shadow: 2px 2px 10px  black;
+}
+.option-cardapio h3 {
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 1.5rem;
+
+}
+.material-icons{
+    font-size: 3.5rem;
+    background-repeat: 3rem;
+    color: var(--corPaleta02);
+}
+.option-cardapio a {
+    color: var(--corPaleta02);
+    padding-bottom: 20px;
+}
+.option-cardapio a:hover{
+    text-decoration: underline;
+    text-underline-offset: 7px;
+
+}
+.option-cardapio p {
+    width: 150px;
+}
+.decorationImg{
+    background-image: url(img/fatia-pizza.png);
+    position: absolute;
+    background-size: 200px;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    right: 50px;
+    background-position: top right;
+    
+
+    
+}
+.about-us{
+    background-image: url(img/fundo-rosa.png);
+    background-repeat: no-repeat;
+    background-size: 100% 114%  ;
+    top: -10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    font-family: var(--fontParagraph);
+    font-size: 1.1rem;
+    gap: 15px;
+}
+.about-us p {
+    width: 450px;
+    text-align: center;
+ 
+}
+.about-us h2 {
+    padding-top: 30px;
+    font-family: var(--fonteTitle);
+    font-weight: normal;
+    font-size: 2rem;
+    color: var(--corPaleta02);
+}
+.imgLeft{
+    background-image: url(img/tipos-massa-pizza.jpg);
+    position: absolute;
+    background-size: contain;
+    width: 200px;
+    height: 200px;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: -20px;
+    top: 10px;
+    background-position: bottom;
+    transform: rotate(10deg);
+}
+.imgRight{
+    background-image: url(img/sobre-img.jpeg);
+    background-size:contain ;
+    width: 200px;
+    height: 220px;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 80px;
+    background-position: bottom;
+    left: -40px;
+    transform: rotate(-10deg);
+   
+}
+.recorte-white{
+    position: relative;
+    margin-top: 70px;
+}
+.button-sobre .askbutton:hover{
+    border-color: var(--corPaleta04);
+    color: var(--corPaleta04);
+}
+.promotion{
+    margin-top: 50px;
+    height: 100vh;
+}
+.titlePromotion{
+    text-align: center;
+    font-size: 2rem;
+    font-family: var(--fonteTitle);
+
+
+}
+.promotion p {
+    text-align: center;
+    font-size: 1.1rem;
+    font-family: var(--fontParagraph);
+    margin: 10px 0;
+}
+.container-promotion{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+.option-promotion{
+    font-family: var(--fontParagraph);
+    width: 300px;
+    height: 350px;
+    border: 1px solid var(--corPaleta04);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    box-shadow: 1px 1px 5px  black;
+    background-color: var(--corPaleta03);
+}
+.promotion-img{
+    background-image: url(img/promotion.png) ;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 350px;
+    height: 350px;
+}
+.promotion .value{
+    color: var(--corPaleta02);
+    font-weight: 700;
+    font-size: 1.2rem;
+    align-self: start;
+    padding-left: 35px;
+}
+.button-promotion{
+    margin: 5px;
+    width: 150px;
+    height: 50px;
+    border-radius: var(--borderRadios);
+    color: var(--corPaleta01);
+    font-size: 0.9rem;
+    background-color: var(--corPaleta02);
+    cursor: pointer;
+    border: none;
+    align-self: flex-start;
+    margin-left: 30px;
+}
+.button-promotion:hover{
+    border: 3px solid #000;
+    border-color: var(--corPaleta04);
+    color: var(--corPaleta04) 
+}
+.passer .material-icons{
+    font-size: 2.5rem ;
+    cursor: pointer;
+    margin-top: 30px;
+}
+.passer .material-icons:hover{
+    color: var(--corPaleta04);
 }

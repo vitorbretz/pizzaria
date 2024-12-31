@@ -474,3 +474,30 @@ main p {
 .passer .material-icons:hover{
     color: var(--corPaleta04);
 }
+.gallery{
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 15px;
+    
+}
+.galery-wrapper {
+    overflow-x: auto;
+    width: 200px;
+    height: 200px;
+}
+.item {
+    width: 200px;
+    height: 200px;
+    flex-shrink: 0;
+    transition: all 600ms ease-in-out;
+    background-size: contain; 
+}
+
+.galery-wrapper::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .galery-wrapper-wrapper {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }

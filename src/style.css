@@ -169,7 +169,7 @@ main p {
     height: 400px;
     width: calc(100vw - 14px);
 }
-.optionApp {
+.fundo-recorte-black {
     background-image: url(img/3214600-232323.png);
     width: 100%;
     background-repeat: no-repeat;
@@ -422,6 +422,7 @@ main p {
     font-size: 1.1rem;
     font-family: var(--fontParagraph);
     margin: 10px 0;
+    margin-bottom: 50px;
 }
 .container-promotion{
     display: flex;
@@ -509,4 +510,10 @@ main p {
   .galery-wrapper-wrapper {
     -ms-overflow-style: none; /* IE and Edge */
     scrollbar-width: none; /* Firefox */
+  }
+  .recorte-reservation{
+    margin: 0;
+    padding: 0;
+    height: 500px;
+    width: calc(100vw - 14px);
   }

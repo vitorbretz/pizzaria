@@ -5,11 +5,11 @@ const maxItems = items.length;
 let namePizza = document.querySelector('.PizzaName')
 let valuePizza = document.querySelector('.value')
 console.log(items)
+var pizzaIndex = 0
 
 
-console.log(items)
 controls.forEach(control =>{
-    control.addEventListener('click',()=>{
+    control.addEventListener('click',(indice)=>{
         const isLeft = control.classList.contains('buttonLeft')
         if(isLeft){
             currentItem -= 1;
@@ -18,16 +18,16 @@ controls.forEach(control =>{
         }
         if(currentItem >= maxItems){
             currentItem = 0
+            namePizza.innerHTML = "Calabresa"
         }
         if(currentItem < 0){
            currentItem = maxItems - 1;
+           namePizza.innerHTML = "Frango com catupiry"
           
         }
-        if(items === 0){
-            namePizza.innerHTML = "Calabresa";
-           }else{
-           
-           }
+       
+ 
+       
         
         items.forEach(item => item.classList.remove('current-item'))
 

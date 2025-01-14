@@ -29,7 +29,7 @@
                         <li><a href="#home">Home</a></li>
                         <li><a href="#menu">Menu</a></li>
                         <li><a href="#promocao">Promoçoes</a></li>
-                        <li><a href="">Redes Sociais</a></li>
+                        <li><a href="#reservas">Reservas</a></li>
                         <li><a href="#sobre">Sobre nos</a></li>
                     </ul>
                 </nav>
@@ -189,31 +189,78 @@
 
         </section>
     </div>
-    <div class="recorte-reservation">
+    <div id="reservas" class="recorte-reservation">
 
         <section class="fundo-recorte-black">
-            <div class="reservation-text">
-                <h3>Fassa sua reserva</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque nemo incidunt assumenda voluptate ab sint.</p>
-                <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
+            <div class="container-reservation">
+                <div class="reservation-text">
+                    <h3>Fassa sua reserva agora</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat perferendis at ipsum ex tempora numquam.</p>
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+                <form class="formulario" action="./" method="get">
+                    <div>
+                        <label " for="nome">Nome</label>
+                        <input id="nome" type="text" name="nome" placeholder="Maria da Silva" required>
+                    </div>
+
+                    <div>
+                        <label for="">Email</label>
+                        <input type="email" name="email" id="" placeholder="exemplo@gmail.com" required>
+                    </div>
+
+                    <div>
+                        <label for="telefone">Telefone</label>
+                        <input type="tel" name="telefone" id="telefone" placeholder="99 98888-8888" required maxlength="11">
+                    </div>
+
+
+                    <div>
+                        <label for="Pessoas">Numero de pessoas</label>
+                        <input type="number" name="number" id="number" placeholder="2" maxlength="10">
+                    </div>
+                    
+                    <div>
+                        <label for="time">Hora da reserva</label>
+                        <input type="time" name="time" id="time" required placeholder="00:00" >
+                    </div>
+
+                    <div>
+                        <label for="date">Data da reserva</label>
+                        <input type="date" name="date" id="date">
+                    </div>
+                    <button class="askbutton table formButton">Enviar</button>
+                </form>
             </div>
-            <form action="" method="get">
-                <input type="text">
-                <input type="email" name="" id="">
-                <input type="tel" name="" id="">
-                <input type="text" name="" id="">
-                <input type="date" name="" id="">
-                <input type="time" name="" id="">
-                <textarea name="" id=""></textarea>
-                <input type="button" value="<a>">
-            </form>
             
             
         </section>
+        <footer>
+            <div>
+                <h1>Pizza Palace</h1>
+                <div class="descriptionFooter">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit, aut odit! Explicabo corporis impedit obcaecati ex doloribus animi sint. Officia.</p>
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+                <div class="socialMedia">
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
 
     </div>
 

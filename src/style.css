@@ -519,7 +519,7 @@ main p {
     margin: 0;
     padding: 0;
     height: 500px;
-    width: calc(100vw - 14px);
+    width: calc(100vw - 16px);
   }
  
   .reservation-text {
@@ -583,5 +583,64 @@ form input {
 input[type=date], input[type=time]{
     color: #757575;
     font-size: 1rem;
+}
+footer{
+    width: 80vw;
+    border: 2px solid #000;
+    margin: 0 auto 40px auto;
+    padding: 30px;
+    background-color: var(--corPaleta03);
+ 
+
+}
+footer h1{
+    font-family: var(--fonteTitle);
+    font-size: 2.5rem;
+}
+.descriptionFooter{
+    display: flex;
+    font-family: var(--fontParagraph);
+    gap: 30px;
+}
+.descriptionFooter p{
+    width: 300px;
+    text-align: left;
+    padding-top: 10px;
+}
+.descriptionFooter ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns:  100% 100%;
+    gap: 80px;
+    text-align: center;
+    font-size: 1.2rem;
+ 
+
+}
+.descriptionFooter ul li a {
+    text-decoration: none;
+    color: #000;
+    text-decoration: underline;
+    text-underline-offset: 8px;
+
+    &:nth-child(1){
+        font-size: 30px;
+        background-image: url();
+    }
+
+}
+.socialMedia ul li a {
+    display: flex;
+    width: 100%;
+    padding-top: 30px;
+
+    &:nth-child(1){
+        
+        font-size: 30px;
+        background-image: url(img-sociaMedia/facebook_1384005.png);
+        background-repeat: no-repeat;
+    }
+    
+    
 }
 

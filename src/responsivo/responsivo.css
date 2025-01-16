@@ -1,0 +1,63 @@
+@media screen and (max-width: 1055px) {
+  .logo{
+        font-size: 2rem;
+    }
+    .menu ul{
+        gap: 30px;  
+    }
+    .menu ul li {
+        font-size: 1rem;
+    }
+    .buttonHeader{
+        font-size: 1rem;
+    }
+    main p{
+        width: auto;
+        
+    }
+    .decorationImg{
+        display: none;
+    }
+    
+}
+@media screen and (max-width: 910px){
+    .menu {
+        display: none;
+    }
+    .logo{
+        font-size: 2.5rem;
+    }
+    .imgLeft{
+        display: none;
+    }
+    .imgRight{
+        display: none;
+    }
+}
+@media screen and (max-width: 766px){
+    .title {
+       font-size: 2rem;
+    }
+    .fundo-recorte-black{
+        top: -150px;
+    }
+    main p{
+        font-size: 1rem;
+        margin-top: 20px;
+        
+    }
+    main{
+       background-size: 110vh;
+       background-position: center center;
+    }
+    .cardapio{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        align-content: center;
+        
+    }
+    .option-cardapio{
+        width: 200px;
+    }
+}

@@ -91,9 +91,6 @@ main {
     background-size: 100%;
     height: 110vh;
     width: calc(100vw - 14px);
-    background-color: #ff7c32;
-    overflow: hidden;
-
 
 }
 
@@ -128,6 +125,9 @@ main p {
     font-size: 1.1rem;
     font-family: var(--fontParagraph);
     margin-bottom: 50px;
+    margin: 0 25px;
+    
+    
 
 
 }
@@ -294,6 +294,7 @@ main p {
     position: relative;
     margin: 30px auto;
     gap: 30px;
+    margin: 0 30px;
   }
 .option-cardapio{
     font-family: var(--fontParagraph);
@@ -543,6 +544,7 @@ main p {
     width: 100%;
     gap: 10px 50px;
     font-family: var(--fontParagraph);
+    margin-right: 20px;
 
   }
   .container-reservation{
@@ -551,7 +553,7 @@ main p {
     height: 100%;
     align-items: center;
     justify-content: center;
-    gap: 150px;
+    gap: 50px;
     color: var(--corPaleta01);
   }
   .reservation-text ul{
@@ -610,37 +612,67 @@ footer h1{
 .descriptionFooter ul {
     list-style: none;
     display: grid;
-    grid-template-columns:  100% 100%;
-    gap: 80px;
+    grid-template-columns:  1fr 1fr;
+    width: 100%;
+    gap: 30px 0;
     text-align: center;
     font-size: 1.2rem;
- 
-
+    font-family: var(--fontParagraph);
 }
+
 .descriptionFooter ul li a {
     text-decoration: none;
     color: #000;
     text-decoration: underline;
     text-underline-offset: 8px;
 
-    &:nth-child(1){
-        font-size: 30px;
-        background-image: url();
-    }
+   
+
+}
+.descriptionFooter ul li a:hover{
+    text-decoration-color: var(--corPaleta02);
+}
+.socialMedia ul li {
+    list-style: none;
+    cursor: pointer;
+
 
 }
 .socialMedia ul li a {
-    display: flex;
+    height: 100%;
     width: 100%;
-    padding-top: 30px;
+}
+.socialMedia ul {
+    margin-top: 30px;
+    display: flex;
+    gap: 15px;
+   justify-content: flex-end;
 
-    &:nth-child(1){
-        
-        font-size: 30px;
-        background-image: url(img-sociaMedia/facebook_1384005.png);
-        background-repeat: no-repeat;
-    }
-    
     
 }
+.facebook{
+        background-image: url(img-sociaMedia/facebook_1384005.png);
+        height: 30px;
+        width: 30px;
+        background-size: cover;
+        background-repeat: no-repeat;
+      
+}
+.whats{
+    background-image: url(img-sociaMedia/whatsapp_4423488.png);
+        height: 30px;
+        width: 30px;
+        background-size: cover;
+        background-repeat: no-repeat;
 
+}
+.instagran{
+    background-image: url(img-sociaMedia/instagram_733614.png);
+    height: 30px;
+    width: 30px;
+    background-size: cover;
+    background-repeat: no-repeat9;
+}
+
+
+ 

@@ -6,6 +6,15 @@ let namePizza = document.querySelector('.PizzaName')
 let valuePizza = document.querySelector('.value')
 console.log(items)
 var pizzaIndex = 0
+//
+let menu = document.getElementById("menu-Mobile")
+let btnMenu = document.getElementById("btn-mobile")
+
+document.querySelector('.buttonBurger').addEventListener('click', () => {
+	document.querySelector('.buttonBurger').classList.toggle('close');
+})
+//
+
 
 
 controls.forEach(control =>{

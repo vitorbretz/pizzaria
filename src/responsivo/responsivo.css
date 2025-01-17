@@ -39,7 +39,7 @@
        font-size: 2rem;
     }
     .fundo-recorte-black{
-        top: -150px;
+        top: -60px;
     }
     main p{
         font-size: 1rem;
@@ -50,14 +50,27 @@
        background-size: 110vh;
        background-position: center center;
     }
+    .sub-title{
+        font-size: 2rem;
+        padding-top: 80px;
+    }
+    .cards{
+        width: 120px;
+    }
+    .carousel{
+       width: 80vw; 
+    }
     .cardapio{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        justify-items: center;
-        align-content: center;
+        flex-wrap: wrap;
         
+    }
+    .paragraph-menu{
+        width: 100%;
     }
     .option-cardapio{
         width: 200px;
+    }
+    .about-us{
+        
     }
 }

@@ -132,8 +132,8 @@ main p {
 
 }
 .ask{
-    width: 400px;
-    margin: auto;
+    display: flex;
+    justify-content: center;
 }
 .askbutton {
     margin: 10px;
@@ -171,7 +171,6 @@ main p {
 .recorte {
     margin: 0;
     padding: 0;
-    height: 400px;
     width: calc(100vw - 14px);
 }
 .fundo-recorte-black {
@@ -179,9 +178,9 @@ main p {
     width: 100%;
     background-repeat: no-repeat;
     background-size: 100% 100%  ;
-    height: 100%;
+    height: 400px;
     position: relative;
-    top: -70px;
+    top: -60px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -281,7 +280,6 @@ main p {
   }
   .paragraph-menu{
     text-align: center;
-
     font-family: var(--fontParagraph);
     font-size: 1.1rem;
     width: 600px;
@@ -292,9 +290,8 @@ main p {
     justify-content: center;
     max-width: 1000px;
     position: relative;
-    margin: 30px auto;
-    gap: 30px;
-    margin: 0 30px;
+    margin: 50px auto;
+    gap: 30px; 
   }
 .option-cardapio{
     font-family: var(--fontParagraph);
@@ -404,7 +401,7 @@ main p {
 }
 .recorte-white{
     position: relative;
-    margin-top: 90px;
+    margin-top:350px;
     overflow: hidden;
 }
 .onlineBlack:hover, .tableBlack:hover{

@@ -70,7 +70,80 @@
     .option-cardapio{
         width: 200px;
     }
-    .about-us{
+    .about-us p{
+        font-size: 0.9rem;
+    }
+    .promotion-img{
+        display: none;
+    }
+    .reservation-text{
+        padding-left: 20px;
+        padding: 0;
+    }
+    .reservation-text h3{
+        font-size: 1.5rem;
+        padding: 0;
+    }
+    .reservation-text p{
+        display: none;
+
+    }
+    .container-reservation{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 3px;
+    }
+    .formulario{
+        margin: 0 auto;
+        gap: 8px 25px;
+        
         
     }
+    form input{
+        width: 150px;
+        font-size: 0.8rem;
+    }
+    .recorte-reservation .fundo-recorte-black {
+        height: 500px;
+    }
+    .descriptionFooter ul{
+        gap: 30px 20px;
+        margin-right: 10px;
+    }
+    .descriptionFooter{
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 500px) {
+    .option-cardapio{
+        width: 160px;
+    }
+    
+    .cardapio{
+        margin: 30px auto;
+        padding: 0 5px
+    }
+    .paragraph-menu{
+        width: 300px;
+    }
+    .cardapio 
+.option-cardapio h3{
+        font-size: 1.5rem;
+    }
+    .option-cardapio p{
+        font-size: 0.9rem;
+    }
+    .option-cardapio a{
+        padding-bottom: 15px;
+    }
+    .descriptionFooter p{
+        text-align: center;
+        margin: 0 auto;
+        width: 200px;
+    }
+    footer h1{
+        text-align: center;
+    }
+    
 }

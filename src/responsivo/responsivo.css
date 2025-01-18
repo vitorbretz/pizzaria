@@ -80,7 +80,8 @@
         width: 200px;
     }
     .about-us p{
-        font-size: 0.9rem;
+        font-size: 0.8rem;
+        
     }
     .promotion-img{
         display: none;
@@ -128,6 +129,9 @@
     .option-cardapio{
         width: 160px;
     }
+    .logo{
+        font-size: 2rem;
+    }
     
     .cardapio{
         margin: 30px auto;
@@ -135,6 +139,12 @@
     }
     .paragraph-menu{
         width: 300px;
+    }
+    .buttonHeader{
+        width: 130px;
+        height: 45px;
+        font-size: 1rem;
+
     }
     .cardapio 
 .option-cardapio h3{

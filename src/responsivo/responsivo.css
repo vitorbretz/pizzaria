@@ -24,6 +24,9 @@
     .menu {
         display: none;
     }
+    .menu-mobile{
+        display: block;
+    }
     .logo{
         font-size: 2.5rem;
     }

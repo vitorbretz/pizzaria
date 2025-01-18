@@ -9,6 +9,12 @@ var pizzaIndex = 0
 //
 let menu = document.getElementById("menu-Mobile")
 let btnMenu = document.getElementById("btn-mobile")
+let btnMobile = document.querySelector('#btn-mobile')
+let menuMobile =  document.querySelector(".menu-mobile")
+
+btnMobile.addEventListener('click',()=>{
+    menuMobile.classList.toggle('active');
+})
 
 document.querySelector('.buttonBurger').addEventListener('click', () => {
 	document.querySelector('.buttonBurger').classList.toggle('close');
